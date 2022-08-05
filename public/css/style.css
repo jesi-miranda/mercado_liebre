@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+#titulo{
+    font-size: 24px;
+}
+
+p.precios{
+    font-size: 18px;
+}
+
+p.descuentos{
+    font-size: 16px;
+}
+
+p.descripcion{
+    font-size: 16px;
+    display: flex;
+}
+
+div.burger-menu{
+    color:white;
+    align-items: center;
+    background-color: #1259c3;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 40px;
+    margin: 0 auto;
+    height: 40px;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    background-position: center;
+}
+
+footer div{
+    font-size: 12px;
+    text-align: center;
+}
+
+div.credit-card{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+div.gift{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+div.shield{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.compras{
+    text-align: center;
+}
+.final{
+    text-align: justify;
+}
+.busqueda{
+    border: solid 1px #666;
+    background-color: white;
+    color:  #666;
+    width: 40%;
+}
+#lupa{
+    background-color: white;
+    width: 3%;
+}
+main{
+    text-align: center;
+    max-width: 90vw;
+}
+.producto{
+    border-top: solid 1px #ebebeb;   
+}
+div.envio{
+    display: block;
+    color: green;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: relative;
+    left: 90%;
+    top: -28px;
+    right: 20px;
+}
+p.descuentos{
+    color:#39b54a;
+    display: flex;
+    width: 70%;
+}
+
+.articulos{
+    width: 90vw;
+    margin: 10px;
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.descripcion{
+    display: block;
+}
+.precios{
+    display: flex;
+    width: 30%;
+}
+.bloque{
+    display: flex;
+    width: 100%;
+}
+
+@media (min-width: 769px){
+    .body{
+        display: flex;
+        justify-content: space-between;
+    }
+    .lista{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    .burger-menu{
+        visibility: hidden;
+    }
+}
+@media (min-width: 361px){
+    .body{
+        justify-content: space-between;
+        display: block;
+    }
+    .articulos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        justify-content: space-between;
+    }
+    .lista{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    .burger-menu{
+        visibility: hidden;
+    }
+}
