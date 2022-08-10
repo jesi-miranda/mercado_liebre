@@ -5,14 +5,47 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
 header{
+    height: 100%;
     background-color: #EAC926;
+    justify-content: center;
+    padding: 8px;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
 }
-
+.bloque1{
+    display: flex;
+    width: 100%;
+    justify-content: center;  
+    align-items: center;
+}
+.logo{
+    width: 50%;
+}
+.lupa{
+    width: 20%;
+}
+.busqueda{
+    width: 30%;
+}
+.buscar{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+}
+header ul{
+    list-style: none;
+}
 #titulo{
+    display: flex;
     font-size: 24px;
+    text-align: justify;
+    padding: 15px;
+    align-content: start;
 }
 
 p.precios{
@@ -70,19 +103,11 @@ div.shield{
 .final{
     text-align: justify;
 }
-.busqueda{
-    border: solid 1px #666;
-    background-color: white;
-    color:  #666;
-    width: 40%;
-}
-#lupa{
-    background-color: white;
-    width: 3%;
-}
+
 main{
+    align-items: center;
     text-align: center;
-    max-width: 90vw;
+    max-width: 90%;
 }
 .producto{
     border-top: solid 1px #ebebeb;   
@@ -104,62 +129,230 @@ div.envio{
 }
 p.descuentos{
     color:#39b54a;
-    display: flex;
+    display: block;
     width: 70%;
 }
 
 .articulos{
-    width: 90vw;
-    margin: 10px;
+    width: 50%;
+    margin: 30px;
     padding: 15px;
     display: block;
     font-size: 16px;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.descripcion{
-    display: block;
-}
-.precios{
-    display: flex;
-    width: 30%;
-}
 .bloque{
     display: flex;
     width: 100%;
 }
+.descripcion{
+    display: block;
+}
+.precios{
+    display: block;
+    width: 30%;
+}
+.menu{
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+main .banner{
+    height: 30%;
+    width: 100vw;
+}
+.caja-contenedora1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.caja-contenedora2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* MAIN LOGIN Y REGISTER*/
+.formulario{
+    background-color: #ebebeb;
+    padding: 30px;
+    width: 400px;
+    margin:auto; 
+    font-family: 'Roboto';
+}
+#login-usuario{
+    
+    align-items: center;
+    width: 700px;
+    background-color: #ebebeb;
+    border-radius: 4px;
+    padding: 15px;
+
+}
+.formulario label{
+    display: block;
+    size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+main form input{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: auto;
+    width: 50%;
+    border: solid 2px #666;
+    padding: 2px;
+}
+.checkbox{
+    margin: 0px;
+}
+
+.boton-formulario{
+    background-color: #1259c3;
+    border: none;
+    font-size: 15px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* para Desktop*/
 
 @media (min-width: 769px){
-    .body{
+    .main-header-footer{
         display: flex;
         justify-content: space-between;
-    }
-    .lista{
-        display: block;
-    }
-    .menu{
-        display: block;
-    }
-    .burger-menu{
-        visibility: hidden;
-    }
-}
-@media (min-width: 361px){
-    .body{
-        justify-content: space-between;
-        display: block;
     }
     .articulos{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         justify-content: space-between;
-    }
-    .lista{
-        display: block;
+        align-items: center;
+        width: 22%;
     }
     .menu{
-        display: block;
+        will-change: 100%;
+        display: flex;
+        justify-content: space-between;
     }
-    .burger-menu{
-        visibility: hidden;
+    .menu1{
+        width: 40%;
+        display: flex;
+        font-size: 14px;
+        justify-content:space-between;
+        align-items:flex-start;
+    }
+    .menu2{
+        width: 40%;
+        display: flex;
+        font-size: 14px;
+        justify-content:space-between;
+        align-items:flex-end;
+    }
+    p.descripcion{
+        display: none;
+    }
+    .bloque1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    .caja-contenedora1{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .caja-contenedora2{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .lupa{
+        width: 20%;
+    }
+    .buscar{
+        display: flex;
+        width: 50%;
+        margin: 5px;
+    }
+    .sub-header, .logo, .buscar, .compras{
+        font-size: 14px;
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+/* para Tablets*/
+
+@media (min-width: 481px){
+    .main-header-footer{
+        justify-content: space-between;
+        display: flex;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu1{
+        width: 40%;
+        display: flex;
+        font-size: 14px;
+        justify-content:space-between;
+        align-items:flex-start;
+    }
+    .menu2{
+        width: 40%;
+        display: flex;
+        font-size: 14px;
+        justify-content:space-between;
+        align-items:flex-end;
+    }
+    .articulos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        justify-content: space-between;
+        width: 40%;
+    }
+    p.descripcion{
+        display: none;
+      }
+    .bloque1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    .caja-contenedora1{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja-contenedora2{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    div.burger-menu{
+        display: none;
+    }
+    .sub-header, .logo, .buscar, .compras{
+        font-size: 14px;
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 }
