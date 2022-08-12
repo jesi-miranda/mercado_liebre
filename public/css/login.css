@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#login-usuario{
+    width: 100vw;
+    align-items: center;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+    padding: 50px;
+}
+main form input{
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 80%;
+    border: solid 1px #ebebeb;
+    border-radius: 4px;
+}
+.boton-formulario{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    border: solid 1px #ebebeb;
+    border-radius: 4px;

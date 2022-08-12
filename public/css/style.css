@@ -61,7 +61,7 @@ p.descripcion{
     display: flex;
 }
 
-div.burger-menu{
+.burger-menu{
     color:white;
     align-items: center;
     background-color: #1259c3;
@@ -158,8 +158,11 @@ p.descuentos{
     margin: 0px;
     padding: 0px;
 }
-main .banner{
-    height: 30%;
+.banner{
+    background-position: 50%;
+    background-size: auto 100%;
+    display: block;
+    min-height: 150px;
     width: 100vw;
 }
 .caja-contenedora1{
@@ -173,49 +176,6 @@ main .banner{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-/* MAIN LOGIN Y REGISTER*/
-.formulario{
-    background-color: #ebebeb;
-    padding: 30px;
-    width: 400px;
-    margin:auto; 
-    font-family: 'Roboto';
-}
-#login-usuario{
-    
-    align-items: center;
-    width: 700px;
-    background-color: #ebebeb;
-    border-radius: 4px;
-    padding: 15px;
-
-}
-.formulario label{
-    display: block;
-    size: 14px;
-    font-weight: bold;
-    color: #666;
-}
-main form input{
-    box-sizing: border-box;
-    margin: 5px;
-    padding: auto;
-    width: 50%;
-    border: solid 2px #666;
-    padding: 2px;
-}
-.checkbox{
-    margin: 0px;
-}
-
-.boton-formulario{
-    background-color: #1259c3;
-    border: none;
-    font-size: 15px;
-    color: #FFF;
-    padding: 5px 10px;
-    border-radius: 10px;
 }
 
 /* para Desktop*/

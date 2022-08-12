@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="../css/register.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,28 +90,30 @@
             <div class="perfil">
                 <label for="perfil-usuario">Perfil Usuario</label>
                 <br>
-                <input type="radio" name="perfil-usuario" value="Comprador">Comprador
-                <input type="radio" name="perfil-usuario" value="Vendedor">Vendedor
-            </div>
-            <br>
-            <div class="interes">
-                <label for="intereses">Intereses</label>
-                <br>
-                <div class="checkbox">
-                    <input type="checkbox" name="interes" id="interes"> Electro
-                    <br>
-                    <input type="checkbox" name="interes" id="interes"> Moda
-                    <br>
-                    <input type="checkbox" name="interes" id="interes"> Hogar
-                    <br>
-                    <input type="checkbox" name="interes" id="interes"> Jugueteria
-                    <br>
-                    <input type="checkbox" name="interes" id="interes"> Vida Sana
+                <div class="radio">
+                    <input type="radio" name="perfil-usuario" value="Comprador">Comprador
+                    <input type="radio" name="perfil-usuario" value="Vendedor">Vendedor
                 </div>
             </div>
             <br>
+            <label for="intereses">Intereses</label>
+            <div class="interes">
+                <br>
+                <div class="checkbox">
+                    Electro <input type="checkbox" name="interes" id="interes">
+                    <br>
+                    Moda <input type="checkbox" name="interes" id="interes">
+                    <br>
+                    Hogar <input type="checkbox" name="interes" id="interes">
+                    <br>
+                    Jugueteria <input type="checkbox" name="interes" id="interes">
+                    <br>
+                    Vida Sana <input type="checkbox" name="interes" id="interes">
+                </div>
+            </div>
+            <br>
+            <label for="foto-usuario">Foto Usuario</label>
             <div class="foto">
-                <label for="foto-usuario">Foto Usuario</label>
                 <br>
                 <input type="file" name="foto" accept=".jpg">
             </div>

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Registro-Usuario{
+    margin-top: 200px;
+    background-color: #dcdcdc;
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto; 
+    font-family: 'Roboto';
+    color: white;
+}
+
+.formulario label{
+    font-family: 'Roboto';
+    display: block;
+    color:black;
+    size: 12px;
+    font-weight: bold;
+    text-align: justify;
+}
+main form input{
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px #ebebeb;
+}
+.checkbox{
+    margin: 0px;
+    margin-top: 5px;
+}
+.interes{
+    color:black;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    color:black;
+    font-size: 14px;
+}
+.foto{
+    color:black;
+    font-size: 12px;
+}
+.boton-formulario{
+    background-color: #1259c3;
+    border: none;
+    font-size: 15px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
