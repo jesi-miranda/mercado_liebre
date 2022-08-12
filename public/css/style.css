@@ -159,11 +159,10 @@ p.descuentos{
     padding: 0px;
 }
 .banner{
-    background-position: 50%;
-    background-size: auto 100%;
     display: block;
-    min-height: 150px;
-    width: 100vw;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
 }
 .caja-contenedora1{
     display: flex;
@@ -192,7 +191,7 @@ p.descuentos{
         width: 22%;
     }
     .menu{
-        will-change: 100%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }

@@ -26,5 +26,72 @@ main form input{
     width: 80%;
     box-sizing: border-box;
     border: solid 1px #ebebeb;
-    border-radius: 4px
+    border-radius: 4px;
+}
+header{
+    height: 100%;
+    background-color: #EAC926;
+    justify-content: center;
+    padding: 8px;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+}
+.sub-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;  
+    align-items: center;
+}
+.logo{
+    width: 50%;
+}
+.buscar button{
+    box-sizing: border-box;
+    top:0;
+    right: 0;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    width: 55px;
+}
+
+.buscar{
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    display: flex;
+}
+.buscar input{
+    border: none;
+    padding: 5px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    width: 200px;
+    margin: 50px;
+    border-radius: 4px;
+}
+header ul{
+    list-style: none;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu1{
+    width: 40%;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+.menu2{
+    width: 40%;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-evenly;
+    align-items:flex-end;
 }
