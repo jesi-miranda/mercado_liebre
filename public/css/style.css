@@ -185,6 +185,7 @@ p.descuentos{
         justify-content: space-between;
     }
     .articulos{
+        display: block;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         justify-content: space-between;
         align-items: center;
@@ -222,12 +223,12 @@ p.descuentos{
     .caja-contenedora1{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content:space-around;
         align-items: center;
     }
     .caja-contenedora2{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -278,7 +279,7 @@ p.descuentos{
     .articulos{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         justify-content: space-between;
-        width: 40%;
+        width: 50%;
     }
     p.descripcion{
         display: none;
