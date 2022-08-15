@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 
-header{
+header {
     height: 100%;
     background-color: #EAC926;
     justify-content: center;
@@ -17,30 +18,37 @@ header{
     margin: auto;
     width: 100vw;
 }
-.bloque1{
+
+.bloque1 {
     display: flex;
     width: 100%;
-    justify-content: center;  
+    justify-content: center;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 50%;
 }
-.lupa{
+
+.lupa {
     width: 20%;
 }
-.busqueda{
+
+.busqueda {
     width: 30%;
 }
-.buscar{
+
+.buscar {
     display: flex;
-    width: 50%;
+    width: 40%;
     margin: 10px;
 }
-header ul{
+
+header ul {
     list-style: none;
 }
-#titulo{
+
+#titulo {
     display: flex;
     font-size: 24px;
     text-align: justify;
@@ -48,21 +56,21 @@ header ul{
     align-content: start;
 }
 
-p.precios{
+p.precios {
     font-size: 18px;
 }
 
-p.descuentos{
+p.descuentos {
     font-size: 16px;
 }
 
-p.descripcion{
+p.descripcion {
     font-size: 16px;
     display: flex;
 }
 
-.burger-menu{
-    color:white;
+.burger-menu {
+    color: white;
     align-items: center;
     background-color: #1259c3;
     border-radius: 6px;
@@ -77,42 +85,49 @@ p.descripcion{
     background-position: center;
 }
 
-footer div{
+footer div {
     font-size: 12px;
     text-align: center;
 }
 
-div.credit-card{
-    color:#1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-div.gift{
+div.credit-card {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
-div.shield{
-    color:#1259c3;
+
+div.gift {
+    color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
-.compras{
+
+div.shield {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.compras {
     text-align: center;
 }
-.final{
+
+.final {
     text-align: justify;
 }
 
-main{
+main {
     align-items: center;
     text-align: center;
     max-width: 90%;
 }
-.producto{
-    border-top: solid 1px #ebebeb;   
+
+.producto {
+    border-top: solid 1px #ebebeb;
+    padding: 0px;
 }
-div.envio{
+
+div.envio {
     display: block;
     color: green;
     font-size: 16px;
@@ -126,15 +141,18 @@ div.envio{
     left: 90%;
     top: -28px;
     right: 20px;
+    transition: 500ms;
+    transition-delay: 300ms;
 }
-p.descuentos{
-    color:#39b54a;
+
+p.descuentos {
+    color: #39b54a;
     display: block;
     width: 70%;
 }
 
-.articulos{
-    width: 50%;
+    
+.articulos {
     margin: 30px;
     padding: 15px;
     display: block;
@@ -142,171 +160,191 @@ p.descuentos{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.bloque{
+
+.bloque {
     display: flex;
     width: 100%;
 }
-.descripcion{
+
+.descripcion {
     display: block;
 }
-.precios{
+
+.precios {
     display: block;
     width: 30%;
 }
-.menu{
+
+.menu {
     display: none;
     margin: 0px;
     padding: 0px;
 }
-.banner{
-    display: block;
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
+
+.banner {
+    width: 100vw;
 }
-.caja-contenedora1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.caja-contenedora2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
+/* para Tablets*/
+
+@media (min-width: 481px) {
+    .main-header-footer {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu1 {
+        width: 40%;
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .menu2 {
+        width: 40%;
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-top: 10px;
+        width: 40%;
+        margin: 30px;
+        padding: 15px;
+        display: block;
+        font-size: 16px;
+    }
+
+    p.descripcion {
+        display: none;
+    }
+
+    .bloque1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .caja-contenedora1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .caja-contenedora2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    div.burger-menu {
+        display: none;
+    }
+
+    .sub-header,
+    .logo,
+    .buscar,
+    .compras {
+        font-size: 14px;
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 }
 
 /* para Desktop*/
 
-@media (min-width: 769px){
-    .main-header-footer{
+@media (min-width: 769px) {
+    .main-header-footer {
         display: flex;
         justify-content: space-between;
     }
-    .articulos{
-        display: block;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        justify-content: space-between;
-        align-items: center;
-        width: 22%;
+
+    .articulos {
+        margin-top: 10px;
+        width: 28%;
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: oll 450ms;
     }
-    .menu{
+
+    .menu {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    .menu1{
+
+    .menu1 {
         width: 40%;
         display: flex;
         font-size: 14px;
-        justify-content:space-between;
-        align-items:flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-    .menu2{
+
+    .menu2 {
         width: 40%;
         display: flex;
         font-size: 14px;
-        justify-content:space-between;
-        align-items:flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
     }
-    p.descripcion{
+
+    p.descripcion {
         display: none;
     }
-    .bloque1{
+
+    .bloque1 {
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
         align-items: center;
     }
-    .caja-contenedora1{
+
+    .caja-contenedora1 {
         display: flex;
         flex-wrap: nowrap;
-        justify-content:space-around;
-        align-items: center;
+        justify-content: space-around;
+
     }
-    .caja-contenedora2{
+
+    .caja-contenedora2 {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
-    .lupa{
+
+    .lupa {
         width: 20%;
     }
-    .buscar{
-        display: flex;
-        width: 50%;
-        margin: 5px;
-    }
-    .sub-header, .logo, .buscar, .compras{
-        font-size: 14px;
-        width: 100%;
-        margin: 5px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-}
-/* para Tablets*/
 
-@media (min-width: 481px){
-    .main-header-footer{
-        justify-content: space-between;
+    .buscar {
         display: flex;
-    }
-    .menu{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .menu1{
-        width: 40%;
-        display: flex;
-        font-size: 14px;
-        justify-content:space-between;
-        align-items:flex-start;
-    }
-    .menu2{
-        width: 40%;
-        display: flex;
-        font-size: 14px;
-        justify-content:space-between;
-        align-items:flex-end;
-    }
-    .articulos{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        justify-content: space-between;
         width: 50%;
+        margin: 5px;
     }
-    p.descripcion{
-        display: none;
-      }
-    .bloque1{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        align-items: center;
-    }
-    .caja-contenedora1{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .caja-contenedora2{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    div.burger-menu{
-        display: none;
-    }
-    .sub-header, .logo, .buscar, .compras{
+
+    .sub-header,
+    .logo,
+    .buscar,
+    .compras {
         font-size: 14px;
         width: 100%;
         margin: 5px;
@@ -314,5 +352,8 @@ p.descuentos{
         justify-content: center;
         flex-wrap: nowrap;
         align-items: center;
+    }
+    .sub-footer{
+        display: flex;
     }
 }
