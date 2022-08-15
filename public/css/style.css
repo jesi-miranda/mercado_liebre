@@ -123,7 +123,9 @@ main {
 }
 
 .producto {
+    width: 100%;
     border-top: solid 1px #ebebeb;
+    background-color: white;
     padding: 0px;
 }
 
@@ -281,9 +283,11 @@ p.descuentos {
         margin-top: 10px;
         width: 28%;
         box-shadow: 0px 0px 10px rgb(100 100 100);
-        transition: oll 450ms;
+        transition: all 455ms;
     }
-
+    .articulo:hover{
+        display:flex;
+    }
     .menu {
         width: 100%;
         display: flex;
@@ -355,5 +359,9 @@ p.descuentos {
     }
     .sub-footer{
         display: flex;
+        justify-content: space-evenly;
+    }
+    .tarjeta, .regalo, .seguridad{
+        font-size: 13px;
     }
 }
